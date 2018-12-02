@@ -5,12 +5,13 @@ from email.mime.text import MIMEText
 '''
 Purpose: Sends the email to the recipient
 Parameters: Message - the message that was gotten from the read file
+Pre: You need to activate your 
 '''
 def send(body):
     msg = MIMEMultipart()
-    msg['From'] = 'xaveayk@gmail.com'
-    msg['To'] = 'xaveayk@gmail.com'
-    password = "(Raiders753)"
+    msg['From'] = SomeEmail
+    msg['To'] = OtherEmail
+    password = PW
     msg['Subject'] = "It works!!!"
     msg.attach(MIMEText(body, 'html'))
     print(msg)
